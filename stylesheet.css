@@ -1123,6 +1123,11 @@ audio {
 #b10,#b110{
 	background-image: url('b10.png');
 }
+#img-cont{
+	padding-left: 240px;
+    width: 900px; /* Set width */
+    height: 500px; /* Set height */
+  }
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
 	-webkit-transform: rotate(30deg);
@@ -1269,17 +1274,28 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
+#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story,#us,#img-cont {
 	display: none;
 }
 
 .cake-cover {
 	margin-top: 50px;
 }
+
+.bckgrnd {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .message {
 	margin-top: 200px;
 	display: none;
 }
+
+.hidden {
+    display: none; /* Hide the element */
+}
+ 
 .message p {
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
@@ -1308,7 +1324,6 @@ audio {
         color: #fff;
         background-color: #466baf;
     }
-
 
 
     /*controlling tablet width*/

@@ -165,6 +165,14 @@ $('document').ready(function(){
 			$('#wish_message').fadeIn('slow');
 		});
 	});
+	
+	$('#us').click(function(){
+		 $(this).addClass('hidden');
+	     $("#img-cont").show();
+		/*$(this).fadeOut('slow').promise().done(function(){
+			$('#us').fadeIn('slow');
+		});*/
+	});
 
 		
 	$('#wish_message').click(function(){
@@ -212,7 +220,9 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
+					//$('.cake').fadeIn('fast');
+					//$('.img-cont').fadeIn('slow');
+					$("#us").show();
 				});
 				
 			}
